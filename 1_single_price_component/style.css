@@ -21,15 +21,17 @@ body {
 
 .description__text {
   margin-left: 1.5em;
+  margin-bottom: 2em;
   color: #cfd3d9;
 }
 
 .component__price {
-  max-width: 500px;
+  max-width: 400px;
   background-color: #2ab3b1;
+  border-bottom-left-radius: 10px;
 }
 
-.price__title {
+.price__title, .list__title {
   margin-left: 1em;
   color: white;
 }
@@ -39,9 +41,34 @@ body {
   color: white;
 }
 
+.price__text {
+  margin-left: 1.5em;
+  color: white;
+}
+
+.button {
+  margin-left: 2em;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  background-color: #bfdf33;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
 .component__list {
-  background-color: green;
-  max-width: 500px;
+  background-color: #4ABEBD;
+  max-width: 400px;
+  border-bottom-right-radius: 10px;
+}
+
+.list__list {
+  list-style-type: none;
+  color: white;
 }
 
 @media screen and (min-width: 700px) {
@@ -51,7 +78,7 @@ body {
   }
 
   .flex {
-    max-width: 1000px;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
