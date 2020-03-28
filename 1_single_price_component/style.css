@@ -1,17 +1,68 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #232536;
+  font-family: 'Karla', sans-serif;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.component__description {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.flex > div {
-  flex: 1 0 50%;
+.description__title {
+  margin-left: 1em;
+  color: #2ab3b1;
 }
 
-.flex > div:first-child {
-  flex: 0 1 100%;
+.description__subtitle {
+  margin-left: 1.2em;
+  color: #bfdf33;
+}
+
+.description__text {
+  margin-left: 1.5em;
+  color: #cfd3d9;
+}
+
+.component__price {
+  max-width: 500px;
+  background-color: #2ab3b1;
+}
+
+.price__title {
+  margin-left: 1em;
+  color: white;
+}
+
+.price__amount {
+  margin-left: 1.2em;
+  color: white;
+}
+
+.component__list {
+  background-color: green;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .flex {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flex > div {
+    flex: 1 0 50%;
+  }
+
+  .flex > div:first-child {
+    flex: 0 1 100%;
+  }
 }
