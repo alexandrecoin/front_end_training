@@ -1,0 +1,147 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 375px;
+  margin: 0px auto;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 30px 25px;
+}
+
+p {
+  line-height: 1.7;
+  color: hsl(218, 22%, 65%);
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5% 35%;
+  border-radius: 7px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+.double-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 {
+  background-color: white;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.section-1 h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.section-1 h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.section-2 {
+  background-color: hsl(179, 62%, 43%);
+} 
+
+.section-2 h1 {
+  color: hsl(204, 43%, 93%);
+}
+
+.section-2 .sub {
+  display: flex;
+  align-items: center;
+}
+
+.section-2 .sub-price {
+  display: inline-block;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.section-2 .sub-time{
+  display: inline-block;
+  color: hsl(179, 62%, 63%);
+  padding-left: 10px;
+}
+
+.section-2 p, .section-3 ul {
+  color: hsl(204, 43%, 93%);
+}
+
+.section-3 {
+  background-color: hsl(179, 72%, 43%);
+  border-radius: 0px 0px 7px 7px;
+}
+
+.section-3 li {
+  padding-top: 5px;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 26px;
+  }
+  body {
+    width: 1000px;
+  }
+  section {
+    padding: 50px 45px;
+  }
+  .double-section {
+    flex-direction: row;
+  }
+  .section-1 {
+    width: 100%;
+  }
+
+  .section-3 {
+    border-bottom-left-radius: 0px;
+  }
+}
