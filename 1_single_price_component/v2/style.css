@@ -141,6 +141,10 @@ button {
     width: 100%;
   }
 
+  .section-2 {
+    border-bottom-left-radius: 7px;
+  }
+
   .section-3 {
     border-bottom-left-radius: 0px;
   }
